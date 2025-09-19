@@ -1,0 +1,76 @@
+body {
+	background: #025f16;
+}
+
+.container {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	color: white;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+input,
+button {
+	height: 65px;
+	font: 1.2rem;
+	padding: 0 20px;
+	border-radius: 5px;
+}
+
+input {
+	background:#81e292;
+	border: 0px;
+	margin-bottom: 2px;
+	color: white;
+}
+
+button {
+	background: #22c232;
+	border: 1px solid #4d4d4d;
+	color: #ffffff;
+	margin: 20px 0;
+}
+
+button:hover {
+	background-color: rgb(168, 168, 168);
+	color: white;
+}
+
+a {
+	font-family: 'Roboto', sans-serif;
+	margin: 20px auto;
+	color: #AAA;
+}
+
+#logo {
+	margin-top: -80px;
+	margin-bottom: -80px;
+	color: #000000;
+}
+
+form div.incorrect label {
+    background-color: #f06272;
+}
+
+form div.incorrect input {
+    border-color: #f06272;
+}
+
+#error-message {
+    color: #f06272;
+    padding-bottom: 20px;
+}
+
+.texto {
+	position: center;
+	color: white;
+	left: 90%;
+	
+}

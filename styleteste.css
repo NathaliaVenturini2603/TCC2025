@@ -1,0 +1,208 @@
+/* ===== Reset ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  /* ===== Cabeçalho ===== */
+  header {
+    background: #2e7d32;
+    color: white;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 1.4rem;
+  }
+  
+  header button {
+    background: transparent;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  #cartCount {
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -8px;
+    right: -10px;
+  }
+  
+  /* ===== Área principal ===== */
+  main {
+    padding: 16px;
+  }
+  
+  /* Barra de filtros */
+  .filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  
+  /* ===== Chips ===== */
+  .chip {
+    background: #eee;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .chip:hover {
+    background: #ddd;
+  }
+  
+  .chip.active {
+    background: #2e7d32;
+    color: white;
+  }
+  
+  /* ===== Inputs ===== */
+  #search {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 60%;
+    max-width: 300px;
+  }
+  
+  #btnSearch {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #2e7d32;
+    color: white;
+    margin-left: 6px;
+    cursor: pointer;
+  }
+  
+  #btnSearch:hover {
+    opacity: 0.9;
+  }
+  
+  /* ===== Cards ===== */
+  .card {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin: 10px 0;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .card img {
+    width: 100%;
+    max-height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  /* Texto */
+  .muted {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  /* Preço */
+  .price {
+    margin: 8px 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #2e7d32;
+  }
+  
+  /* Botões principais */
+  button.btn {
+    background: #2e7d32;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button.btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Layout em linha */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+  }
+  
+  /* ===== Modal ===== */
+  #modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1000;
+  }
+  
+  #modal.open {
+    display: flex;
+  }
+  
+  #sheetContent {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 12px 12px 0 0;
+    animation: slideUp 0.3s ease;
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+  }
+  
+  /* ===== Responsividade ===== */
+  @media (min-width: 700px) {
+    #products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+  
+    #producersList {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+  }
+  

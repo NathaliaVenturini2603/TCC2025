@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #38b000, #006400);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* CONTAINER PRINCIPAL */
+.wrapper {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgb(7, 7, 7);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* TÍTULO */
+.wrapper h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #026207;
+}
+
+/* LOGO */
+#logo {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+/* CAMPOS DO FORMULÁRIO */
+.container div {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #000000;
+    transition: 0.3s ease;
+}
+
+.container div:focus-within {
+    border-color: #fffcfc;
+    background: #ffffff;
+}
+
+.container svg,
+.container span {
+    margin-right: 10px;
+    color: #000000;
+    flex-shrink: 0;
+}
+
+input {
+    flex: 1;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* BOTÃO */
+button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: #057231;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #2d8f00;
+    transform: scale(1.03);
+}
+
+/* MENSAGEM DE ERRO */
+#error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+p {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #000000;
+    font-weight: bold;
+}

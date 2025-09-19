@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AgroLov</title>
+     <script src="scriptteste.js"></script>
+    <link rel="stylesheet" href="styleteste.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>AgroLocal</h1>
+        <div>
+            <button id="openCart">🛒 <span id="cartCount">0</span></button>
+        </div>
+    </header>
+
+    <div style="margin-bottom:10px">
+        <input type="text" id="search" placeholder="Buscar produto ou produtor" />
+        <button id="btnSearch">Buscar</button>
+    </div>
+
+    <div class="filters" style="margin-bottom:15px">
+        <button class="chip active" data-filter="all">Todos</button>
+        <button class="chip" data-filter="frutas">Frutas</button>
+        <button class="chip" data-filter="verduras">Verduras</button>
+        <button class="chip" data-filter="laticinios">Laticínios</button>
+    </div>
+
+    <h2>Produtos</h2>
+    <div id="products"></div>
+
+    <h2>Produtores</h2>
+    <div id="producersList"></div>
+
+    <div id="modal" aria-hidden="true">
+        <div id="sheetContent"></div>
+    </div>
+
+
+</body>
+
+</html>
